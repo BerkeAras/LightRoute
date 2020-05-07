@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+	</head>
+	<body>
+		
+		<a href="/" router-link>Home</a>
+		<a href="/about" router-link>About</a>
+		<a href="/contact" router-link>Contact</a>
+		<a href="/non-router-link">Non-Router-Link (Page loads slower)</a>
+		<a href="/not-existing-page" router-link>Not existing Page</a>
+
+		<div class="router-page" router-page="/" router-root="true">
+			<h1>Home!</h1>
+		</div>
+		<div class="router-page" router-page="/about">
+			<h1>About!</h1>
+		</div>
+		<div class="router-page" router-page="/contact">
+			<h1>Contact!</h1>
+		</div>
+		<div class="router-page" router-page="/non-router-link">
+			<h1>Non-Router-Link!</h1>
+		</div>
+		<div class="router-page" router-page="/404">
+			<h1>Error 404!</h1>
+		</div>
+
+		<script src="js/lightroute.js"></script>
+		<script src="js/index.js"></script>
+	</body>
+</html>
